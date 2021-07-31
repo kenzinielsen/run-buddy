@@ -71,6 +71,9 @@ section {
     padding: 60px; 
 }
 .checkbox-wrapper input, .radio-wrapper input {
+    opacity: 0;
+}
+.checkbox-wrapper label, .radio-wrapper label {
     position: relative;
     left: 10px;
     margin: 10px;
@@ -87,7 +90,7 @@ section {
     left: -30px;
 }
 .radio-wrapper label::before {
-        border-radius: 50%;
+    border-radius: 50%;
 }
 .radio-wrapper label::after {
     content: "";
@@ -98,7 +101,7 @@ section {
     position: absolute;
     left: -29px;
     top: -3px;
-    background-image: radial-gradient(circle, #39a6b2, #024e76);
+    background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
 }
 .checkbox-wrapper label::after {
     content: "";
@@ -114,7 +117,8 @@ section {
 .checkbox-wrapper input + label::after, .radio-wrapper input + label::after {
     content: none;
 }
-.checkbox-wrapper input:checked + label::after, .radio-wrapper input:checked +label::after {
+.checkbox-wrapper input:checked + label::after, 
+.radio-wrapper input:checked +label::after {
     content: "";
 }
 /*Hero style start */
