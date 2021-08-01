@@ -453,6 +453,7 @@ footer a {
 .contact-info iframe {
     flex: 1 100%;
 }
+}
 /* media query for TABLET and smaller */
 @media screen and (max-width: 768px) {
     section {
